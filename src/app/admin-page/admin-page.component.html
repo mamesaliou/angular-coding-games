@@ -1,0 +1,17 @@
+<!-- account.component.html -->
+<div>
+  <h2>Create Account</h2>
+  <input id="createAccountInput" [(ngModel)]="createAccountInput" />
+  <button id="createAccountButton" (click)="createAccount()">Create Account</button>
+</div>
+
+<div>
+  <h2>Top Up Account</h2>
+  <input id="topupAccountInput" [(ngModel)]="topupAccountInput" />
+  <input id="topupAmountInput" [(ngModel)]="topupAmountInput" type="number" />
+  <button id="topupAccountButton" (click)="topUp()">Top Up Account</button>
+</div>
+
+<div>
+  <p id="message">{{ message }}</p>
+</div>

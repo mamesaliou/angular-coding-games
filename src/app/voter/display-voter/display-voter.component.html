@@ -1,0 +1,6 @@
+<voter-component
+  [question]="question" [yesAnswer]="yesAnswer"
+  [noAnswer]="noAnswer" (output)="handleOutput($event)">
+</voter-component>
+<div id="lastVote">Last vote: {{ lastVote }}</div>
+
