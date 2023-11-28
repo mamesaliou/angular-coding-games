@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "coding-games-angular2",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

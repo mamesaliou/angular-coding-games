@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "project1-878a1": {
+      "hosting": {
+        "coding-games-angular2": [
+          "project1-878a1"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "project1-878a1"
+  }
+}

@@ -1,11 +1,5 @@
-<div id="amount">
-  {{ amount | currency:currency:'symbol':'9.2-2'}}
-</div>
+<div id="amount">{{amount|currency:currency:'symbol':'9.2-2'}}</div>
 
-<div id="fee">
-  {{ fee | percent:'2.2-3' }}
-</div>
+<div id="fee">{{fee|percent:'2.2-3' }}</div>
 
-<div id="time">
-  {{timeOfTransaction | date:'ww: yyyy MMMMM dd hh-mm-ss' }}
-</div>
+<div id="time">{{timeOfTransaction | date:'ww: yyyy MMMMM dd hh-mm-ss' }}</div>

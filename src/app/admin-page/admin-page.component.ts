@@ -37,28 +37,28 @@ export class AdminPageComponent {
     }
   }
 
- async topUp() {
- //    if (this.topupAmountInput <= 0) {
- //      this.message = 'INVALID_INPUT';
- //      return;
- //    }
-    try {
-      const balance= await this.accountService
-        .topUp(this.topupAccountInput, this.topupAmountInput);
-      this.message=`Current balance: ${balance}`;
-    }catch (error){
-      // @ts-ignore
-      this.message=error.message;
+  topUp() {
+    if (this.topupAmountInput <= 0) {
+      this.message = 'INVALID_INPUT';
+      return;
     }
-  }
+ //    try {
+ //      const balance= await this.accountService
+ //        .topUp(this.topupAccountInput, this.topupAmountInput);
+ //      this.message=`Current balance: ${balance}`;
+ //    }catch (error){
+ //      // @ts-ignore
+ //      this.message=error.message;
+ //    }
+ //    }
 
-    // this.accountService.topUp(this.topupAccountInput, this.topupAmountInput)
-    //   .then((balance) => {
-    //     this.message = `Current balance: ${balance}`;
-    //   })
-    //   .catch((error) => {
-    //     // Handle errors if needed
-    //     this.message = error.message;
-    //   });
-  // }
+    this.accountService.topUp(this.topupAccountInput, this.topupAmountInput)
+      .then((balance) => {
+        this.message = `Current balance: ${balance}`;
+      })
+      .catch((error) => {
+        // Handle errors if needed
+        this.message = error.message;
+      });
+  }
 }

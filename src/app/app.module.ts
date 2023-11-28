@@ -28,11 +28,11 @@ import { PreviewtransactionComponent } from './transaction/previewtransaction/pr
   providers: [],
   bootstrap: [
     AppComponent,
-    // AdminPageComponent,
+    AdminPageComponent,
     // CounterComponent,
     // DisplayComponent,
     // DisplayVoterComponent,
-    PreviewtransactionComponent
+    // PreviewtransactionComponent
   ]
 })
 export class AppModule { }

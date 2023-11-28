@@ -22,8 +22,10 @@ describe('CounterComponent', () => {
   });
 
   // it('should print input message in every 5ms', fakeAsync(()=>{
-  //   component.inputMessage="Hello World"
+  //   component.message="Hello World"
+  //   let intervalInput=fixture.nativeElement.querySelector('#intervalInput');
   //   intervalInput.value=5;
+  //   let intervalSetButton=fixture.nativeElement.querySelector('#intervalSetButton');
   //   intervalSetButton.click();
   //   fixture.detectChanges();
   //   tick(11);

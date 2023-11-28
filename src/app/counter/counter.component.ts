@@ -8,7 +8,7 @@ export class CounterComponent {
   @Input() message: string = '';
   @Output() tick: EventEmitter<string> = new EventEmitter<string>();
   intervalValue: number = 1000;
-  intervalId: any;
+  intervalId: any
 
   setInterval() {
     if (this.intervalId) {

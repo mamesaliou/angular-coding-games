@@ -23,10 +23,12 @@ describe('TransactionComponent', () => {
   //
   // })
 
-  // it('should display date',  ()=> {
-  //   testerComponent.setInput({currency:'EUR',amount:312.56})
-  //   fixture.detectChanges();
-  //   const amountDiv = fixture.nativeElement.querySelector('#amount');
-  //   expect(amountDiv.textContent).toEqual('000,000,312.56')
-  // });
+  it('should display date',  ()=> {
+    let testerComponent;
+    // @ts-ignore
+    testerComponent.setInput({currency:'EUR',amount:312.56})
+    fixture.detectChanges();
+    const amountDiv = fixture.nativeElement.querySelector('#amount');
+    expect(amountDiv.textContent).toEqual('000,000,312.56')
+  });
 });

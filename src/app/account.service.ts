@@ -12,9 +12,6 @@ export class AccountService {
    if (!this.accountsWithBalance.has(accountID)){
      throw new Error('ACCOUNT_DOES_NOT_EXIST');
    }
-   if (amount<=0){
-     throw new Error('INVALID_INPUT')
-   }
    // @ts-ignore
    this.accountsWithBalance.set(accountID, this.accountsWithBalance.get(accountID) + amount);
    // @ts-ignore
